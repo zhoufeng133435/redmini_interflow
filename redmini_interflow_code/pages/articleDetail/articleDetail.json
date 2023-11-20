@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "JhDialog": "/component/JhDialog/JhDialog"
+  },
+  "navigationBarTitleText": "文章详情"
+}

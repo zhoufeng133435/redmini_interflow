@@ -1,0 +1,9 @@
+<view>
+  page content
+  <JhDialog isVisit="{{true}}">
+    <view>
+      JhDialog content
+      弹窗蒙层滑动，会造成页面滑动，
+    </view>
+  </JhDialog>
+</view>

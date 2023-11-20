@@ -1,0 +1,16 @@
+<!-- 弹窗分为两种
+props
+title 弹窗标题
+isVisit 弹窗开关
+bindVisit 一定要设置，里面设置更改isVisit为false
+bindClose 
+bindOpen
+分别为弹窗打开和关闭的回调函数  catchtouchmove="true" -->
+<view class="cav {{isVisit?'':'hide'}} {{noPadding?'noPadding':''}} {{isTab?'isTab':''}}" catchtap="_changeState" catchtouchmove="touchMove">
+    <view class="confirm {{noPadding?'noBottomRadius':''}}" style="padding-top: {{paddingTopValue}}rpx;min-height: {{minHeight}};" catchtap="_stopTap" animation="{{animat}}">
+        <view class="confirm-title {{isTitleLine?'':'noTitleLine'}} {{titleCenter?'title-center':''}}" wx:if="{{title}}">{{title}}</view>
+        <view class="space" wx:if="{{title && titleSpace}}"></view>
+        <image wx:if="{{!noClose}}" catchtap="_changeState" class="close-btn" src="../../static/confirm_close.png"></image>
+        <slot></slot>
+    </view>
+</view>

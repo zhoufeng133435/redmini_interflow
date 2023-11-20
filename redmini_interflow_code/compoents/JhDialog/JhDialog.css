@@ -1,0 +1,78 @@
+.cav{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  height: 100vh;
+  width:100%;
+  background: rgba(0,0,0,0.5);
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20rpx 20rpx 68rpx;
+  z-index: 9999;
+  transition: 300ms height linear;
+  box-sizing: border-box;
+}
+.confirm{
+  background: #fff;
+  border-radius: 30rpx;
+  padding: 32rpx;
+  padding-top: 104rpx;
+  width: 100%;
+  max-height: 90%;
+  position: relative;
+  overflow-y: auto;
+  box-sizing: border-box;
+  transform: translateY(106%);
+}
+.close-btn{
+  width:48rpx;
+  height: 48rpx;
+  display: block;
+  position: absolute;
+  right: 28rpx;
+  top:28rpx;
+}
+.confirm-title{
+  font-size: 30rpx;
+  color: #252525;
+  height: 110rpx;
+  box-sizing: border-box;
+  line-height: 110rpx;
+  text-align: center;
+  padding-left: 32rpx;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.title-center{
+  padding-left: 0rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.noTitleLine {
+  border-bottom: none;
+}
+.space{
+  height: 40rpx;
+  width: 100%;
+}
+.hide{
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  background: transparent;
+}
+.noPadding {
+  padding: 0;
+}
+.noBottomRadius {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.isTab{
+  bottom:calc(env(safe-area-inset-bottom) + 100rpx);
+}
